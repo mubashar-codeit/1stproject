@@ -4,11 +4,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secfi Landibg page</title>
+    <title>Secfi Landing page</title>
     <link rel="stylesheet" href="secfi.css">
     <!-- Reckless & Matter (licensed self-host example) -->
     <link rel="stylesheet" href="fonts/reckless/stylesheet.css">
     <link rel="stylesheet" href="fonts/matter/stylesheet.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
@@ -16,7 +18,7 @@
 </head>
 
 <body>
-    <div class="hero">
+    <div class="gradient-wrapper">
         <header>
 
             <h1>secfi</h1>
@@ -33,7 +35,7 @@
                 <button class="b1" type="button">Login</button>
                 <button class="b2" type="button">Get Started</button>
 
-                <button class="b3" type="button" id="round"> <i class="fa fa-search" aria-hidden="true"></i></button>
+                <button class="b33" type="button" id="round"> <i class="fa fa-search" aria-hidden="true"></i></button>
             </div>
         </header>
 
@@ -49,32 +51,13 @@
                 <button class="btn-main">Get started <i class="fa fa-angle-right"></i></button>
             </div>
             <div class="main-video">
-                <video src="1st page.mp4" autoplay muted loop></video>
+                <video id="one" src="page1.mp4" autoplay muted loop></video>
             </div>
+
         </section>
+
     </div>
 
-    <!-- <section class="main">
-            <h1>Things are just different <br> when you have equity</h1>
-
-
-            <p>Secfi delivers liquidity and wealth management services to help employees <br> and
-                shareholders of innovative companies achieve their financial goals.</p>
-
-            <a href="#">Get started <i class="fa fa-angle-right" aria-hidden="true"></i></a>
-
-
-
-            <div class="v1">
-
-
-                <video src="1st page.mp4" autoplay muted loop>
-
-                </video>
-            </div>
-
-        </section>
-    </div> -->
 
 
     <!-- ..................trust.............. -->
@@ -110,22 +93,16 @@
                 <div class="b3">
                     <p>Secondary Sale <i class="fa fa-angle-right" aria-hidden="true" style="margin-left: 12rem;"></i>
                     </p>
-                    <hr>
+                    <hr class="thin-line">
                     <p>Non-rescourse Financing <i class="fa fa-angle-right" aria-hidden="true"
                             style="margin-left: 5.5rem;"></i></p>
                 </div>
             </div>
             <div class="b2">
-                <video src="2nd page.mp4" autoplay muted loop>
+                <video src="page2.mp4" autoplay muted loop>
 
                 </video>
             </div>
-
-
-
-
-
-
         </div>
         <br>
         <br><br>
@@ -138,10 +115,10 @@
 
         <div class="box2">
 
-            <div class="b4"> <video src="3rd page.mp4" autoplay muted loop></video></div>
+            <div class="b4"> <video src="page3.mp4" autoplay muted loop></video></div>
             <div class="adjust2">
                 <div class="b5">
-                    <h5>Secfi Wealth</h5>
+                    <h4>Secfi Wealth</h4>
                     <h2>Financial planning and investment
                         management
                     </h2>
@@ -170,36 +147,44 @@
     </section>
 
     <!-- ....................calculation.............  -->
-  
+
 
     <section class=" calculate">
 
         <h1>Leave the calculations to us</h1>
-        <p id="pp">Equity and tax planning can be overwhelming. Our tools do the heavy lifting so you can focus on what <br>
-            matters.</p>
+        <p id="pp">Equity and tax planning can be overwhelming. Our tools do the heavy lifting so you can focus on what
+            <br>
+            matters.
+        </p>
         <div class="call">
+
             <div class="c1">
                 <img src="secfi image.jpeg">
 
-                <h2>Stock option Tax calculator</h2>
+                <h4>Stock option <br>Tax calculator</h4>
                 <p>calculate the costs of exercise-including taxes</p>
 
-            </div>
-            <div class="card2">
-                <img src="secfi image.jpeg">
-                <h2>Stock option Tax calculator</h2>
-                <p>calculate the costs of exercise-including taxes</p>
+                <button type="button"> Learn more </button>
 
             </div>
-            <div class="card3">
+            <div class="c2">
                 <img src="secfi image.jpeg">
-                <h2>Stock option Tax calculator</h2>
-                <p>calculate the costs of exercise-including taxes</p>
+                <h4>Stock options <br> Exit calculator</h4>
+                <p>See what your stock option could be worth</p>
+                <button type="button"> Learn more </button>
+
             </div>
-            <div class="card4">
+            <div class="c3">
                 <img src="secfi image.jpeg">
-                <h2>Stock option Tax calculator</h2>
-                <p>calculate the costs of exercise-including taxes</p>
+                <h4>ATM <br>calculator</h4>
+                <p>Exercise incentive stock options without paying ATM </p>
+                <button type="button"> Learn more </button>
+            </div>
+            <div class="c4">
+                <img src="secfi image.jpeg">
+                <h4>Exercise Timing <br> Planner</h4>
+                <p> Decide whether to exericse your now or later</p>
+                <button type="button"> Learn more </button>
             </div>
         </div>
     </section>
@@ -207,278 +192,278 @@
 
 
 
-        <!-- ...............partner.......  -->
-        <section class="partner">
-            <h1>Choose a partner that gets you</h1>
-            <div class="text">
-                <div class="t1">
-                    <img src="heart.png">
-                    <h2>We’ve been in your shoes before</h2>
-                    <p>Secfi was built with tech professionals in mind. Whether navigating stock options or maximizing
-                        equity, we help guide you through every step of your financial journey.</p>
+    <!-- ...............partner.......  -->
+    <section class="partner">
+        <h1>Choose a partner that gets you</h1>
+        <div class="text">
+            <div class="t1">
+                <img src="heart.png">
+                <h2>We’ve been in your shoes before</h2>
+                <p>Secfi was built with tech professionals in mind. Whether navigating stock options or maximizing
+                    equity, we help guide you through every step of your financial journey.</p>
 
-                </div>
-                <div class="t2">
-                    <img src="clock.png">
-                    <h2>We meet you where you’re at</h2>
-                    <p>Whether you’re at a private startup or a public company, we provide personalized strategies that
-                        fit
-                        your unique needs.</p>
+            </div>
+            <div class="t2">
+                <img src="clock.png">
+                <h2>We meet you where you’re at</h2>
+                <p>Whether you’re at a private startup or a public company, we provide personalized strategies that
+                    fit
+                    your unique needs.</p>
 
-                </div>
-                <div class="t3">
-                    <img src="graph.png">
-                    <h2>Big opportunities, no big minimums</h2>
-                    <p>We believe you don’t need millions to benefit from smart financial planning. We strive to take a
-                        holistic approach to your finances, considering stock options and other assets to help you save
-                        time, cut costs, and grow your wealth.</p>
-
-                </div>
+            </div>
+            <div class="t3">
+                <img src="graph.png">
+                <h2>Big opportunities, no big minimums</h2>
+                <p>We believe you don’t need millions to benefit from smart financial planning. We strive to take a
+                    holistic approach to your finances, considering stock options and other assets to help you save
+                    time, cut costs, and grow your wealth.</p>
 
             </div>
 
+        </div>
 
 
-        </section>
+
+    </section>
 
 
-        <section class="review">
-            <h1 class="heading">What our clients are saying</h1>
+    <section class="review">
+        <h1 class="heading">What our clients are saying</h1>
 
-            <div class="rew">
+        <div class="rew">
 
 
-                <div class="card">
-                    <div class="card-content">
-                        <h4>
-                            “I feel like a small fish in a big pond with wealth advisors.
-                            Secfi is exactly what I've been looking for.
-                            You get me. You know equity. And you make my life easy.”
-                        </h4>
+            <div class="card1">
+                <div class="card1-content">
+                    <h4>
+                        “I feel like a small fish in a big pond with wealth advisors.
+                        Secfi is exactly what I've been looking for.
+                        You get me. You know equity. And you make my life easy.”
+                    </h4>
 
-                        <div class="left-side">
-                            <p class="name">Emma</p>
-                            <h5 class="role">Secfi Wealth client</h5>
-                        </div>
+                    <div class="left-side1">
+                        <p class="name1">Emma</p>
+                        <h5 class="role1">Secfi Wealth client</h5>
                     </div>
                 </div>
+            </div>
 
-                <!-- CARD 2 -->
-                <div class="card">
-                    <div class="card-content">
-                        <h4>
-                            “Secfi was one of the only places I could find that could give me
-                            accurate calculations on AMT.”
-                        </h4>
+            <!-- CARD 2 -->
+            <div class="card2">
+                <div class="card2-content">
+                    <h4>
+                        “Secfi was one of the only places I could find that could give me
+                        accurate calculations on AMT.”
+                    </h4>
 
-                        <div class="left-side">
-                            <p class="name">Amanda</p>
-                            <h5 class="role">Early HR employee at pre-IPO</h5>
-                        </div>
+                    <div class="left-side">
+                        <p class="name2">Amanda</p>
+                        <h5 class="role2">Early HR employee at pre-IPO</h5>
                     </div>
                 </div>
+            </div>
 
 
-                <div class="card">
-                    <div class="card-content">
-                        <h4>
-                            “Secfi felt like the safest option. There is upside and almost no downside,
-                            and I might as well play it safe.”
-                        </h4>
+            <div class="card3">
+                <div class="card3-content">
+                    <h4>
+                        “Secfi felt like the safest option. There is upside and almost no downside,
+                        and I might as well play it safe.”
+                    </h4>
 
-                        <div class="left-side">
-                            <p class="name">Victor</p>
-                            <h5 class="role">Lead Engineer pre-IPO</h5>
-                        </div>
+                    <div class="left-side">
+                        <p class="name3">Victor</p>
+                        <h5 class="role3">Lead Engineer pre-IPO</h5>
                     </div>
                 </div>
+            </div>
+
+        </div>
+
+        <p class="note">
+            Testimonials are specific to an individual Client’s experience and may not be representative of all
+            Clients.
+            Unless otherwise indicated, Clients offering a Testimonial do not receive compensation and their
+            statement does not present a conflict of interest.
+        </p>
+    </section>
+
+
+
+    <!-- ........faQ.......  -->
+    <section class="faq">
+        <h1>We love this stuff so much we <br> write about it every month</h1>
+        <div class="faq-img">
+            <div class="qus">
+                <div class="qus-adj">
+                    <p id="sefi">Secfi Learn</p>
+                    <p id="qh">Our collection of educational content</p>
+
+                    <p>what is the alternative minimum tax(ATM)?
+                    </p>
+                    <hr>
+                    <p>83(b) Election & Early Exercise: Complete Guide for Startup Employees [2025]</p>
+
+                    <hr>
+                    <p>Should you exercise your vested stock options after leaving your company?</p>
+                    <hr>
+                    <p>When should you hire a financial advisor?
+                    </p>
+                    <hr>
+                    <p>Maximizing your employee stock options for long-term gains: ISOs, NSOs, and IPO strategies
+                    </p>
+                    <hr>
+                    <p>The new startup benefit: Equity education
+                    </p>
+
+                </div>
+            </div>
+            <div class="sub">
+                <p>Founder & Funders</p>
+                <div id="p1">Subscribe to our newsletter</div>
+                <div id="pp">Join 30k+ people getting insights on what's happening in startups, venture capital,
+                    public
+                    markets, and more.</div>
+                <form>
+                    <input id="email" type="email" name="email " placeholder="name@example.com">
+                    <input id="but" type="submit" value="Subscribe">
+                </form>
+
+                <img src="secfi em.png">
+            </div>
+        </div>
+    </section>
+
+    <!-- .....................list.................  -->
+    <section class="list ">
+
+        <div class="table">
+            <div class="sol">
+                <ul>
+                    <li>
+                        <h4>Solutions</h4>
+                    </li>
+                    <li>Secfi Liquidity</li>
+                    <li>Secfi Wealth</li>
+                    <li>Secfi Asset Management</li>
+                </ul>
+            </div>
+            <div class="tool">
+                <ul>
+                    <li>
+                        <h4>Tools</h4>
+                    </li>
+                    <li>Equity Planner </li>
+                    <li> ATM Calculator </li>
+                    <li> Stock OPtion Tax Calculator</li>
+                    <li> Exercise Timming Planner</li>
+                    <li> Stock Option Exist Calculator</li>
+                    <li> Compensation Calculator</li>
+                </ul>
+            </div>
+            <div class="res">
+                <ul>
+                    <li>
+                        <h4>Resourse</h4>
+                    </li>
+                    <li>Secfi Learn</li>
+                    <li> Founders & Funders</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+            <div class="about">
+                <ul>
+                    <li>
+                        <h4>ABOUT US</h4>
+                    </li>
+                    <li>Our Story</li>
+                    <li> Careers</li>
+                    <li> News & Press</li>
+                    <li>Contact Us</li>
+                    <li>Legal</li>
+                </ul>
+
+            </div>
+            <div class="social">
+                <ul id="icon">
+
+
+
+                    <li>Privacy policy</li>
+                    <li> Cookie Policy</li>
+                    <li>Security </li>
+                    <li> Terms of Service</li>
+                    <li>Referral Program </li>
+                    <li> sitemap</li>
+                </ul>
 
             </div>
 
-            <p class="note">
-                Testimonials are specific to an individual Client’s experience and may not be representative of all
-                Clients.
-                Unless otherwise indicated, Clients offering a Testimonial do not receive compensation and their
-                statement does not present a conflict of interest.
-            </p>
-        </section>
-
-
-
-        <!-- ........faQ.......  -->
-        <section class="faq">
-            <h1>We love this stuff so much we <br> write about it every month</h1>
-            <div class="faq-img">
-                <div class="qus">
-                    <div class="qus-adj">
-                        <p id="sefi">Secfi Learn</p>
-                        <p id="qh">Our collection of educational content</p>
-
-                        <p>what is the alternative minimum tax(ATM)?
-                        </p>
-                        <hr>
-                        <p>83(b) Election & Early Exercise: Complete Guide for Startup Employees [2025]</p>
-
-                        <hr>
-                        <p>Should you exercise your vested stock options after leaving your company?</p>
-                        <hr>
-                        <p>When should you hire a financial advisor?
-                        </p>
-                        <hr>
-                        <p>Maximizing your employee stock options for long-term gains: ISOs, NSOs, and IPO strategies
-                        </p>
-                        <hr>
-                        <p>The new startup benefit: Equity education
-                        </p>
-
-                    </div>
-                </div>
-                <div class="sub">
-                    <p>Founder & Funders</p>
-                    <div id="p1">Subscribe to our newsletter</div>
-                    <div id="pp">Join 30k+ people getting insights on what's happening in startups, venture capital,
-                        public
-                        markets, and more.</div>
-                    <form>
-                        <input id="email" type="email" name="email " placeholder="name@example.com">
-                        <input id="but" type="submit" value="Subscribe">
-                    </form>
-
-                    <img src="secfi em.png">
-                </div>
-            </div>
-        </section>
-
-        <!-- .....................list.................  -->
-        <section class="list ">
-
-            <div class="table">
-                <div class="sol">
-                    <ul>
-                        <li>
-                            <h4>Solutions</h4>
-                        </li>
-                        <li>Secfi Liquidity</li>
-                        <li>Secfi Wealth</li>
-                        <li>Secfi Asset Management</li>
-                    </ul>
-                </div>
-                <div class="tool">
-                    <ul>
-                        <li>
-                            <h4>Tools</h4>
-                        </li>
-                        <li>Equity Planner </li>
-                        <li> ATM Calculator </li>
-                        <li> Stock OPtion Tax Calculator</li>
-                        <li> Exercise Timming Planner</li>
-                        <li> Stock Option Exist Calculator</li>
-                        <li> Compensation Calculator</li>
-                    </ul>
-                </div>
-                <div class="res">
-                    <ul>
-                        <li>
-                            <h4>Resourse</h4>
-                        </li>
-                        <li>Secfi Learn</li>
-                        <li> Founders & Funders</li>
-                        <li>FAQ</li>
-                    </ul>
-                </div>
-                <div class="about">
-                    <ul>
-                        <li>
-                            <h4>ABOUT US</h4>
-                        </li>
-                        <li>Our Story</li>
-                        <li> Careers</li>
-                        <li> News & Press</li>
-                        <li>Contact Us</li>
-                        <li>Legal</li>
-                    </ul>
-
-                </div>
-                <div class="social">
-                    <ul id="icon">
-
-
-
-                        <li>Privacy policy</li>
-                        <li> Cookie Policy</li>
-                        <li>Security </li>
-                        <li> Terms of Service</li>
-                        <li>Referral Program </li>
-                        <li> sitemap</li>
-                    </ul>
-
-                </div>
-
-            </div>
-        </section>
-        <br>
-        <section class="data">
-            <p>
-                “Secfi” refers to Secfi, Inc. and its affiliates. Secfi, Inc. is a technology company offering a range
-                of
-                financial products and services through its wholly-owned, separately managed but affiliated
-                subsidiaries,
-                Secfi Securities, LLC and Secfi Advisory Limited.
-                <br><br>
-
-                Check the background of Secfi Securities on FINRA’s BrokerCheck. <br><br>
-                Securities products offered by Secfi Securities, LLC, an SEC-registered broker-dealer and Member FINRA /
-                SIPC. Access important information in our Legal Resources and learn more about Secfi Securities in our
-                Customer Relationship Summary. <br><br>
-
-                Investment advisory products and services, including financial planning and investment management,
-                offered
-                exclusively to Clients under an in-force Agreement by Secfi Advisory Limited, an SEC-registered
-                investment
-                adviser. Access important information in our Legal Resources and learn more about Secfi Advisory Limited
-                in
-                our Client Relationship Summary. <br><br>
-
-                Testimonials are specific to an individual Client’s experience and may not be representative of all
-                Clients.
-                Unless otherwise indicated, Clients offering a Testimonial do not receive compensation and their
-                statement
-                does not present a conflict of interest. <br><br>
-
-                This information is provided by Secfi for educational and illustrative purposes only and is not
-                considered
-                an offer, solicitation of an offer, advice, or recommendation to buy, sell, or hold any security. Actual
-                recommendations, investments or investment decisions made by Secfi, whether for its own account or on
-                behalf
-                of others, may differ from those expressed herein. All investing involves risk, including the risk of
-                losing
-                the money you invest, and past performance does not guarantee future performance. This material contains
-                information available to Secfi at the date of issue and takes no account of subsequent developments.
-                Secfi
-                relies on information from various sources believed to be reliable, including information from its
-                Customers, Clients, and other third parties, but cannot guarantee the accuracy or completeness of that
-                information. Secfi, Inc. does not provide tax, legal, or investment advice. Views expressed by other
-                Secfi
-                representatives or affiliates may differ from the information presented herein. <br><br>
-
-                Secfi is not affiliated with, sponsored, or endorsed by the companies listed, described, or featured on
-                its
-                site. Company logos or trademarks used do not imply endorsement and are the property of their respective
-                owners. <br><br>
-
-                This is a representative list of clients that work with Secfi as of November 10th, 2023. It is not known
-                whether they approve or disapprove of our services. There is no guarantee of future performance or
-                success.
-                Past performance is not indicative of future results. All investments carry the risk of loss, and there
-                is
-                no guarantee that any investment strategy will achieve its objectives. <br><br>
-
-                No private company is guaranteed to conduct an Initial Public Offering (IPO). Investing in private
-                companies
-                involves significant risk, including the potential loss of your entire investment.
-            </p>
+        </div>
+    </section>
+    <br>
+    <section class="data">
+        <p>
+            “Secfi” refers to Secfi, Inc. and its affiliates. Secfi, Inc. is a technology company offering a range
+            of
+            financial products and services through its wholly-owned, separately managed but affiliated
+            subsidiaries,
+            Secfi Securities, LLC and Secfi Advisory Limited.
             <br><br>
-        </section>
+
+            Check the background of Secfi Securities on FINRA’s BrokerCheck. <br><br>
+            Securities products offered by Secfi Securities, LLC, an SEC-registered broker-dealer and Member FINRA /
+            SIPC. Access important information in our Legal Resources and learn more about Secfi Securities in our
+            Customer Relationship Summary. <br><br>
+
+            Investment advisory products and services, including financial planning and investment management,
+            offered
+            exclusively to Clients under an in-force Agreement by Secfi Advisory Limited, an SEC-registered
+            investment
+            adviser. Access important information in our Legal Resources and learn more about Secfi Advisory Limited
+            in
+            our Client Relationship Summary. <br><br>
+
+            Testimonials are specific to an individual Client’s experience and may not be representative of all
+            Clients.
+            Unless otherwise indicated, Clients offering a Testimonial do not receive compensation and their
+            statement
+            does not present a conflict of interest. <br><br>
+
+            This information is provided by Secfi for educational and illustrative purposes only and is not
+            considered
+            an offer, solicitation of an offer, advice, or recommendation to buy, sell, or hold any security. Actual
+            recommendations, investments or investment decisions made by Secfi, whether for its own account or on
+            behalf
+            of others, may differ from those expressed herein. All investing involves risk, including the risk of
+            losing
+            the money you invest, and past performance does not guarantee future performance. This material contains
+            information available to Secfi at the date of issue and takes no account of subsequent developments.
+            Secfi
+            relies on information from various sources believed to be reliable, including information from its
+            Customers, Clients, and other third parties, but cannot guarantee the accuracy or completeness of that
+            information. Secfi, Inc. does not provide tax, legal, or investment advice. Views expressed by other
+            Secfi
+            representatives or affiliates may differ from the information presented herein. <br><br>
+
+            Secfi is not affiliated with, sponsored, or endorsed by the companies listed, described, or featured on
+            its
+            site. Company logos or trademarks used do not imply endorsement and are the property of their respective
+            owners. <br><br>
+
+            This is a representative list of clients that work with Secfi as of November 10th, 2023. It is not known
+            whether they approve or disapprove of our services. There is no guarantee of future performance or
+            success.
+            Past performance is not indicative of future results. All investments carry the risk of loss, and there
+            is
+            no guarantee that any investment strategy will achieve its objectives. <br><br>
+
+            No private company is guaranteed to conduct an Initial Public Offering (IPO). Investing in private
+            companies
+            involves significant risk, including the potential loss of your entire investment.
+        </p>
+        <br><br>
+    </section>
 </body>
 
 </html>
