@@ -4,155 +4,167 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Secfi Landing page</title>
+    <title>Secfi Landing Page</title>
+
     <link rel="stylesheet" href="secfi.css">
-    <!-- Reckless & Matter (licensed self-host example) -->
-    <link rel="stylesheet" href="fonts/reckless/stylesheet.css">
-    <link rel="stylesheet" href="fonts/matter/stylesheet.css">
-    <link rel="apple-touch-icon" sizes="180x180" href="/icons/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png">
+    <link rel="preload" href="/fonts/matter-regular-web.woff2" as="font" crossorigin="" type="font/woff2">
+    <link rel="preload" href="/fonts/matter-semibold-web.woff2" as="font" crossorigin="" type="font/woff2">
+    <link rel="preload" href="/fonts/reckless-regular-web.woff2" as="font" crossorigin="" type="font/woff2">
+    <link rel="preload" href="/fonts/reckless-light-italic.woff2" as="font" crossorigin="" type="font/woff2">
+    <link rel="preload" href="/fonts/reckless-light-web.woff2" as="font" crossorigin="" type="font/woff2">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
-
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"> -->
 </head>
 
 <body>
-    <div class="gradient-wrapper">
-        <header>
 
-            <h1>secfi</h1>
-            <ul>
-                <li><a href="#">For Employees</a></li>
-                <li><a href="#">For Executives</a></li>
-                <li><a href="#">For Investors</a></li>
-                <li><a href="#">Tools</a></li>
-                <li><a href="#">Resources</a></li>
-
-
-            </ul>
-            <div class="buttons">
-                <button class="b1" type="button">Login</button>
-                <button class="b2" type="button">Get Started</button>
-
-                <button class="b33" type="button" id="round"> <i class="fa fa-search" aria-hidden="true"></i></button>
+    <!-- NAVBAR -->
+    <header>
+        <div class="navbar">
+            <div class="nav-left">
+                <img src="Secfi logo.svg" alt="secfi">
+                <ul>
+                    <li><a href="#">For Employees</a></li>
+                    <li><a href="#">For Executives</a></li>
+                    <li><a href="#">For Investors</a></li>
+                    <li><a href="#">Tools</a></li>
+                    <li><a href="#">Resources</a></li>
+                </ul>
             </div>
-        </header>
 
-
-        <!-- ..............................main................................... -->
-
-
-        <section class="main">
-            <div class="main-text">
-                <h1>Things are just different <br> when <em>you have equity</em></h1>
-                <p>Secfi delivers liquidity and wealth management services to help employees and shareholders of
-                    innovative companies achieve their financial goals.</p>
-                <button class="btn-main">Get started <i class="fa fa-angle-right"></i></button>
+            <div class="nav-right">
+                <button class="btn-light">Login</button>
+                <button class="btn-dark">Get started</button>
+                <button class="btn-icon"><i class="fa fa-search"></i></button>
             </div>
-            <div class="main-video">
-                <video id="one" src="page1.mp4" autoplay muted loop></video>
+        </div>
+
+
+        <!-- HERO SECTION -->
+        <section class="hero">
+
+            <div class="hero-text">
+                <h1>
+                    Things are just <br>
+                    different when <br>
+                    <em>you have equity</em>
+                </h1>
+
+                <p>
+                    Secfi delivers liquidity and wealth management services to help <br>
+                    employees and shareholders of innovative companies achieve their
+                    financial goals.
+                </p>
+
+                <button class="hero-btn">
+                    Get started <i class="fa fa-angle-right"></i>
+                </button>
+            </div>
+
+            <div class="hero-video">
+                <video src="page1.mp4" autoplay muted loop></video>
             </div>
 
         </section>
-
+    </header>
+     <div class="chat-btn">
+        <!-- <i class="fa-solid fa-messages"></i> -->
+        <img src="svgexport-9.svg" alt="">
+        
     </div>
 
 
 
-    <!-- ..................trust.............. -->
+
     <section class="trust">
         <p>Trusted by employees of <br>some of the best companie</p>
         <ul>
-            <li> Google</li>
-            <li> Canva</li>
-            <li> reddit</li>
-            <li> Stripe</li>
+            <li><img src="google.svg"> </li>
+            <li> <img src="canva.svg"></li>
+            <li> <img src="coinbase.svg"></li>
+            <li> <img src="databricks.svg"></li>
         </ul>
     </section>
 
 
     <!-- .........................solution........................  -->
-    <section class="solution">
-        <h1>You need solutions built <br>for your unique needs</h1>
-        <div class="box">
-            <div class="adjust">
-                <div class="b1">
-                    <h4>secfi Liquidity </h4>
-                    <h2>Liquidity for your pre-IPO shares and options</h2>
-                    <p>Ready to trun your equity to cash? Our flexible liquidity products help unlock
-                        the value of your pre-IPO shares while looking to optimize for taxes and long-term gains,
-                        so you get to keep more of your hard-earned money.
-                    </p>
-                    <button type="button">Learn more <i class="fa fa-angle-right" aria-hidden="true"></i></button>
+    <section class="countainer2">
+        <div class="solution">
+            <h1>You need solutions built <br>for <em>your</em> unique needs</h1>
+            <div class="box">
+                <div class="adjust">
+                    <div class="b1">
+                        <span>secfi Liquidity </span>
+                        <h3>Liquidity for your pre-IPO shares and options</h3>
+                        <p>Ready to trun your equity to cash? Our flexible liquidity products help unlock
+                            the value of your pre-IPO shares while looking to optimize for taxes and long-term gains,
+                            so you get to keep more of your hard-earned money.
+                        </p>
+                        <button type="button">Learn more <i class="fa fa-angle-right" aria-hidden="true"></i></button>
 
 
 
 
+                    </div>
+                    <div class="b3">
+                        <p>Secondary Sale <i class="fa fa-angle-right" aria-hidden="true"
+                                style="margin-left: 10.2rem;"></i>
+                        </p>
+
+                        <p>Non-rescourse Financing <i class="fa fa-angle-right" aria-hidden="true"
+                                style="margin-left: 3.1rem;"></i></p>
+                    </div>
                 </div>
-                <div class="b3">
-                    <p>Secondary Sale <i class="fa fa-angle-right" aria-hidden="true" style="margin-left: 12rem;"></i>
-                    </p>
-                    <hr class="thin-line">
-                    <p>Non-rescourse Financing <i class="fa fa-angle-right" aria-hidden="true"
-                            style="margin-left: 5.5rem;"></i></p>
-                </div>
-            </div>
-            <div class="b2">
-                <video src="page2.mp4" autoplay muted loop>
-
-                </video>
-            </div>
-        </div>
-        <br>
-        <br><br>
-    </section>
-
-
-
-    <!-- .....................section 2nd box.............  -->
-    <section class="solution2">
-
-        <div class="box2">
-
-            <div class="b4"> <video src="page3.mp4" autoplay muted loop></video></div>
-            <div class="adjust2">
-                <div class="b5">
-                    <h4>Secfi Wealth</h4>
-                    <h2>Financial planning and investment
-                        management
-                    </h2>
-                    <p>Get personalized financial planning and guidace from experienced
-                        advisors. Whether you work at a private startup or a public company,
-                        our tailored strategies can help you grow and protect your wealth
-                        with confidence
-                    </p>
-                    <button type="button">Learn more <i class="fa fa-angle-right" aria-hidden="true"></i></button>
-                </div>
-                <div class="b6">
-                    <h2>Your financial peace of mind is our priority</h2>
-                    <p> <i class="fa fa-check" aria-hidden="true"
-                            style="margin-right: 16px;font-size: 13px ; color:gray"></i>A financial plan aligned with
-                        your needs and values</p>
-                    <p> <i class="fa fa-check" aria-hidden="true"
-                            style="margin-right: 16px;font-size: 13px ; color:gray"></i>A flexible, iterative approach
-                    </p>
-                    <p> <i class="fa fa-check" aria-hidden="true"
-                            style="margin-right: 16px; font-size: 13px ; color:gray"></i>A portfolio built just for you
-                    </p>
+                <div class="b2">
+                    <video src="page2.mp4" autoplay muted loop></video>
                 </div>
             </div>
         </div>
 
-    </section>
+        <div class="solution2">
 
+            <div class="box2">
+
+                <div class="b4"> <video src="page3.mp4" autoplay muted loop></video></div>
+                <div class="adjust2">
+                    <div class="b5">
+                        <span>Secfi Wealth<span>
+                                <h3>Financial planning and investment
+                                    management
+                                </h3>
+                                <p>Get personalized financial planning and guidace from experienced
+                                    advisors. Whether you work at a private startup or a public company,
+                                    our tailored strategies can help you grow and protect your wealth
+                                    with confidence
+                                </p>
+                                <button type="button">Learn more <i class="fa fa-angle-right"
+                                        aria-hidden="true"></i></button>
+                    </div>
+                    <div class="b6">
+                        <h2>Your financial peace of mind is our priority</h2>
+                        <p> <img src="svgexport-5.svg" alt="svg">A financial plan aligned
+                            with
+                            your needs and values</p>
+                        <p> <img src="svgexport-5.svg" alt="svg">A flexible, iterative
+                            approach
+                        </p>
+                        <p> <img src="svgexport-5.svg" alt="svg">A portfolio built just
+                            for you
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
     <!-- ....................calculation.............  -->
 
 
     <section class=" calculate">
 
-        <h1>Leave the calculations to us</h1>
-        <p id="pp">Equity and tax planning can be overwhelming. Our tools do the heavy lifting so you can focus on what
+        <h3>Leave the calculations to us</h3>
+        <p id="pp1">Equity and tax planning can be overwhelming. Our tools do the heavy lifting so you can focus on what
             <br>
             matters.
         </p>
@@ -194,7 +206,7 @@
 
     <!-- ...............partner.......  -->
     <section class="partner">
-        <h1>Choose a partner that gets you</h1>
+        <h1>Choose a partner that <em style="color: #73726c;">gets you</em> </h1>
         <div class="text">
             <div class="t1">
                 <img src="heart.png">
@@ -228,52 +240,52 @@
 
 
     <section class="review">
-        <h1 class="heading">What our clients are saying</h1>
+        <h3> What our clients are saying</h3>
 
         <div class="rew">
 
 
             <div class="card1">
-                <div class="card1-content">
-                    <h4>
+                <div class="card-content">
+                    <p>
                         “I feel like a small fish in a big pond with wealth advisors.
                         Secfi is exactly what I've been looking for.
                         You get me. You know equity. And you make my life easy.”
-                    </h4>
+                    </p>
 
                     <div class="left-side1">
                         <p class="name1">Emma</p>
-                        <h5 class="role1">Secfi Wealth client</h5>
+                        <span class="role">Secfi Wealth client</span>
                     </div>
                 </div>
             </div>
 
             <!-- CARD 2 -->
             <div class="card2">
-                <div class="card2-content">
-                    <h4>
+                <div class="card-content">
+                    <p>
                         “Secfi was one of the only places I could find that could give me
                         accurate calculations on AMT.”
-                    </h4>
+                    </p>
 
                     <div class="left-side">
                         <p class="name2">Amanda</p>
-                        <h5 class="role2">Early HR employee at pre-IPO</h5>
+                        <span class="role">Early HR employee at pre-IPO</span>
                     </div>
                 </div>
             </div>
 
 
             <div class="card3">
-                <div class="card3-content">
-                    <h4>
+                <div class="card-content">
+                    <p>
                         “Secfi felt like the safest option. There is upside and almost no downside,
                         and I might as well play it safe.”
-                    </h4>
+                    </p>
 
                     <div class="left-side">
                         <p class="name3">Victor</p>
-                        <h5 class="role3">Lead Engineer pre-IPO</h5>
+                        <span class="role">Lead Engineer pre-IPO</span>
                     </div>
                 </div>
             </div>
@@ -288,60 +300,58 @@
         </p>
     </section>
 
-
-
-    <!-- ........faQ.......  -->
     <section class="faq">
-        <h1>We love this stuff so much we <br> write about it every month</h1>
+        <h1>We love this stuff <em style="color: #73726c;">so much </em>we <br> write about it every month</h1>
         <div class="faq-img">
             <div class="qus">
                 <div class="qus-adj">
-                    <p id="sefi">Secfi Learn</p>
-                    <p id="qh">Our collection of educational content</p>
+                    <span>Secfi Learn</span>
+                    <h3>Our collection of educational content </h3>
 
-                    <p>what is the alternative minimum tax(ATM)?
+                    <p>What is the alternative minimum tax (ATM)?
                     </p>
-                    <hr>
-                    <p>83(b) Election & Early Exercise: Complete Guide for Startup Employees [2025]</p>
 
-                    <hr>
-                    <p>Should you exercise your vested stock options after leaving your company?</p>
-                    <hr>
+                    <p>83(b) Election & Early Exercise: Complete <br> Guide for Startup Employees [2025]</p>
+
+
+                    <p>Should you exercise your vested stock <br> options after leaving your company?</p>
+
                     <p>When should you hire a financial advisor?
                     </p>
-                    <hr>
-                    <p>Maximizing your employee stock options for long-term gains: ISOs, NSOs, and IPO strategies
+
+                    <p>Maximizing your employee stock options for <br> long-term gains: ISOs, NSOs, and IPO
+                        <br>strategies
                     </p>
-                    <hr>
+
                     <p>The new startup benefit: Equity education
                     </p>
 
                 </div>
             </div>
             <div class="sub">
-                <p>Founder & Funders</p>
-                <div id="p1">Subscribe to our newsletter</div>
-                <div id="pp">Join 30k+ people getting insights on what's happening in startups, venture capital,
-                    public
-                    markets, and more.</div>
-                <form>
-                    <input id="email" type="email" name="email " placeholder="name@example.com">
-                    <input id="but" type="submit" value="Subscribe">
-                </form>
+                <span>Founder & Funders</span>
+                <h3>Subscribe to our newsletter<h3>
+                        <div id="pp">Join 30k+ people getting insights on what's happening in <br> startups, venture
+                            capital,
+                            public
+                            markets, and more.</div>
+                        <form>
+                            <input id="email" type="email" name="email " placeholder="name@example.com">
+                            <input id="but" type="submit" value="Subscribe">
+                        </form>
 
-                <img src="secfi em.png">
+                        <img src="secfi em.png">
             </div>
         </div>
     </section>
 
     <!-- .....................list.................  -->
     <section class="list ">
-
         <div class="table">
             <div class="sol">
                 <ul>
                     <li>
-                        <h4>Solutions</h4>
+                        <h4>SOLUTION</h4>
                     </li>
                     <li>Secfi Liquidity</li>
                     <li>Secfi Wealth</li>
@@ -351,7 +361,7 @@
             <div class="tool">
                 <ul>
                     <li>
-                        <h4>Tools</h4>
+                        <h4>TOOLS</h4>
                     </li>
                     <li>Equity Planner </li>
                     <li> ATM Calculator </li>
@@ -364,7 +374,7 @@
             <div class="res">
                 <ul>
                     <li>
-                        <h4>Resourse</h4>
+                        <h4>RESOURCES</h4>
                     </li>
                     <li>Secfi Learn</li>
                     <li> Founders & Funders</li>
@@ -385,23 +395,33 @@
 
             </div>
             <div class="social">
-                <ul id="icon">
+                <div id="icon">
+                    <i class="fa-brands fa-x-twitter"></i>
+                    <i class="fa-brands fa-linkedin" style="margin-left: 10px;"></i>
 
 
+                    <ul>
 
-                    <li>Privacy policy</li>
-                    <li> Cookie Policy</li>
-                    <li>Security </li>
-                    <li> Terms of Service</li>
-                    <li>Referral Program </li>
-                    <li> sitemap</li>
-                </ul>
 
+                        <li>Privacy policy</li>
+                        <li> Cookie Policy</li>
+                        <li>Security </li>
+                        <li> Terms of Service</li>
+                        <li>Referral Program </li>
+                        <li> sitemap</li>
+                    </ul>
+
+                </div>
             </div>
+        </div>
+
 
         </div>
+
     </section>
-    <br>
+
+
+
     <section class="data">
         <p>
             “Secfi” refers to Secfi, Inc. and its affiliates. Secfi, Inc. is a technology company offering a range
@@ -411,18 +431,21 @@
             Secfi Securities, LLC and Secfi Advisory Limited.
             <br><br>
 
-            Check the background of Secfi Securities on FINRA’s BrokerCheck. <br><br>
-            Securities products offered by Secfi Securities, LLC, an SEC-registered broker-dealer and Member FINRA /
-            SIPC. Access important information in our Legal Resources and learn more about Secfi Securities in our
-            Customer Relationship Summary. <br><br>
+            Check the background of Secfi Securities on <a href="">FINRA’s BrokerCheck</a>.<br><br>
+            Securities products offered by Secfi Securities, LLC, an SEC-registered broker-dealer and Member <a
+                href="">FINRA </a>/
+            <a href="">SPIC</a> Access important information in our Legal Resources and learn more about Secfi
+            Securities in our<a href="">
+                Customer Relationship Summary</a>. <br><br>
 
             Investment advisory products and services, including financial planning and investment management,
             offered
             exclusively to Clients under an in-force Agreement by Secfi Advisory Limited, an SEC-registered
             investment
-            adviser. Access important information in our Legal Resources and learn more about Secfi Advisory Limited
+            adviser. Access important information in our <a href="">Legal Resources</a> and learn more about Secfi
+            Advisory Limited
             in
-            our Client Relationship Summary. <br><br>
+            our <a href="">Client Relationship Summary</a>.<br><br>
 
             Testimonials are specific to an individual Client’s experience and may not be representative of all
             Clients.
