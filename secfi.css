@@ -1122,3 +1122,368 @@ header {
 .data a {
     color: #73726C;
 }
+
+
+
+
+/* ===========================
+   BASIC RESPONSIVE FIXES
+   (add AFTER all your existing CSS)
+=========================== */
+
+html, body {
+    max-width: 100%;
+    overflow-x: hidden;
+}
+
+img,
+video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+
+@media (max-width: 1024px) {
+
+    /* ---------- HERO ---------- */
+    .hero {
+        flex-direction: column;
+        padding: 3rem 2rem 5rem;
+        gap: 3rem;
+    }
+
+    .hero-text {
+        max-width: 100%;
+    }
+
+    .hero-video {
+        width: 100%;
+        max-width: 640px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .hero-video video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* ---------- TRUST STRIP ---------- */
+    .trust {
+        padding: 2rem 2rem;
+        gap: 2rem;
+    }
+
+    .trust p {
+        margin-left: 0;
+    }
+
+    .trust ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .trust ul li {
+        margin: 0;
+    }
+
+    /* ---------- SOLUTION SECTIONS ---------- */
+    .countainer2 {
+        padding: 100px 0;
+    }
+
+    .box,
+    .solution2 .box2 {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2rem;
+        margin: 0 1.5rem;
+    }
+
+    .solution .b1,
+    .solution .b2,
+    .solution .b3,
+    .solution2 .box2 .b4,
+    .adjust2 .b5,
+    .adjust2 .b6 {
+        width: 100%;
+        max-width: 640px;
+        height: auto;
+        margin: 0 auto 2rem;
+    }
+
+    .solution .b2 video,
+    .solution2 .box2 .b4 video {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Fix the huge top margin inside this paragraph on smaller screens */
+    .adjust2 .b5 p {
+        margin-top: 1.5rem;
+    }
+
+    /* ---------- CALCULATE CARDS ---------- */
+    .calculate {
+        padding: 100px 0;
+    }
+
+    .calculate .call {
+        flex-wrap: wrap;
+        justify-content: center;
+        padding: 0 2rem;
+        row-gap: 2rem;
+    }
+
+    .calculate .call > div {
+        width: 45%;
+        max-width: 380px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    /* ---------- PARTNER TEXT BLOCKS ---------- */
+    .text {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        padding: 0 2rem;
+    }
+
+    .text .t1,
+    .text .t2,
+    .text .t3 {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    /* ---------- REVIEWS ---------- */
+    .rew {
+        flex-direction: column;
+        margin: 0 2rem;
+        gap: 2rem;
+    }
+
+    .card1,
+    .card2,
+    .card3 {
+        width: 100%;
+        max-width: 780px;
+        margin: 0 auto;
+        height: auto;
+    }
+
+    /* ---------- FAQ / SUBSCRIBE SECTION ---------- */
+    .faq-img {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 2rem;
+        margin: 0 1.5rem;
+        gap: 2rem;
+    }
+
+    .qus,
+    .sub {
+        width: 100%;
+        max-width: 640px;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .faq .sub img {
+        width: 100%;
+        height: auto;
+        margin-top: 2rem;
+    }
+
+    /* ---------- FOOTER LIST COLUMNS ---------- */
+    .table {
+        flex-wrap: wrap;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        row-gap: 2rem;
+    }
+
+    .sol,
+    .tool,
+    .res,
+    .about,
+    .social {
+        width: 50%;
+        margin-left: 0;
+        margin-bottom: 1rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    /* ---------- NAVBAR ---------- */
+    .navbar {
+        padding: 1rem 1.25rem;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+
+    .nav-left {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.75rem;
+    }
+
+    .nav-left ul {
+        margin-left: 0;
+        flex-wrap: wrap;
+        gap: 1rem;
+    }
+
+    .nav-right {
+        width: 100%;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 0.5rem;
+    }
+
+    .nav-left ul li a {
+        font-size: 14px;
+    }
+
+    /* ---------- HERO ---------- */
+    .hero {
+        padding: 2.5rem 1.5rem 4rem;
+        gap: 2rem;
+    }
+
+    .hero-text {
+        text-align: left;
+        max-width: 100%;
+    }
+
+    .hero-text h1 {
+        font-size: 36px;
+        line-height: 1.25;
+    }
+
+    .hero-text p {
+        font-size: 16px;
+    }
+
+    .hero-btn {
+        width: 100%;
+    }
+
+    /* ---------- TRUST ---------- */
+    .trust {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 1.5rem 1.5rem;
+        gap: 1.5rem;
+    }
+
+    .trust ul {
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    /* ---------- SOLUTION TITLE ---------- */
+    .solution h1 {
+        font-size: 32px;
+        line-height: 1.3;
+        margin: 0 1.5rem 3rem;
+    }
+
+    .countainer2 {
+        padding: 80px 0;
+    }
+
+    /* ---------- CALCULATE ---------- */
+    .calculate {
+        padding: 80px 0;
+    }
+
+    .calculate h3 {
+        font-size: 32px;
+    }
+
+    #pp1 {
+        padding: 0 1.5rem;
+        font-size: 14px;
+    }
+
+    #pp1 br {
+        display: none;
+    }
+
+    .calculate .call > div {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    /* ---------- PARTNER ---------- */
+    .partner {
+        padding: 80px 0 40px;
+    }
+
+    .partner h1 {
+        font-size: 30px;
+        line-height: 1.3;
+        margin: 0 1.5rem;
+    }
+
+    /* ---------- REVIEW ---------- */
+    .review {
+        padding: 80px 0;
+    }
+
+    .review h3 {
+        font-size: 30px;
+        padding-bottom: 2.5rem;
+    }
+
+    .review .note {
+        margin: 2rem 1.5rem;
+        font-size: 14px;
+    }
+
+    /* ---------- FAQ ---------- */
+    .faq {
+        padding: 80px 0;
+    }
+
+    .faq h1 {
+        font-size: 32px;
+        line-height: 1.35;
+        padding: 0 1.5rem 3rem;
+    }
+
+    /* ---------- FOOTER LIST ---------- */
+    .list {
+        padding: 80px 0 100px;
+    }
+
+    .table {
+        margin-left: 1.5rem;
+        margin-right: 1.5rem;
+    }
+
+    .sol,
+    .tool,
+    .res,
+    .about,
+    .social {
+        width: 100%;
+    }
+
+    /* ---------- DISCLAIMER TEXT ---------- */
+    .data {
+        padding: 0 1.5rem 2rem;
+        font-size: 11px;
+        line-height: 1.4rem;
+    }
+}
