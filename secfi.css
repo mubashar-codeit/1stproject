@@ -612,6 +612,7 @@ header {
     background-color: white;
     border-radius: 20px;
     padding: 3rem 3rem;
+    box-shadow: 0 17px 37px 0 rgba(41, 42, 45, .02), 0 67px 67px 0 rgba(41, 42, 45, .02), 0 150px 90px 0 rgba(41, 42, 45, .012), 0 267px 107px 0 rgba(41, 42, 45, 0), 0 417px 117px 0 rgba(41, 42, 45, 0);
 }
 
 .adjust2 .b6 h2 {
